@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_190sdp"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_8sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_190sdp">
+
+            <ImageView
+                android:id="@+id/sample_cart_img"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_margin="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/sample_cart_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/sample_cart_img"
+                android:fontFamily="@font/open_sans"
+                android:text="Razer DeathAdder"
+                android:textColor="#000000"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/sample_cart_currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sample_cart_name"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/sample_cart_img"
+                android:fontFamily="@font/open_sans"
+                android:text="$"
+                android:textColor="#000000"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/sample_cart_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sample_cart_name"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/sample_cart_currency"
+                android:fontFamily="@font/open_sans"
+                android:text="100"
+                android:textColor="#000000"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/sample_cart_quantityTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sample_cart_price"
+                android:layout_marginLeft="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/sample_cart_img"
+                android:fontFamily="@font/open_sans"
+                android:text="Quantity"
+                android:textColor="#000000"
+                android:textSize="@dimen/_13sdp" />
+
+
+            <Button
+                android:id="@+id/sample_cart_minus"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sample_cart_quantityTitle"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/sample_cart_img"
+                android:background="@drawable/bg_btn"
+                android:fontFamily="@font/open_sans"
+                android:text="-"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/sample_cart_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sample_cart_quantityTitle"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_toRightOf="@id/sample_cart_minus"
+                android:fontFamily="@font/open_sans"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/sample_cart_add"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sample_cart_quantityTitle"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/sample_cart_quantity"
+                android:background="@drawable/bg_btn"
+                android:fontFamily="@font/open_sans"
+                android:text="+"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/sample_cart_remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sample_cart_quantity"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_toRightOf="@+id/sample_cart_minus"
+                android:background="@drawable/bg_btn"
+                android:fontFamily="@font/open_sans"
+                android:text="Remove"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

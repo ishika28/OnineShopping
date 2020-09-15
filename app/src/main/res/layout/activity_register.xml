@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".Activity.RegisterActivity"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_20sdp"
+    >
+
+    <ImageView
+        android:id="@+id/ra_ivLogo"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height= "@dimen/_100sdp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/ra_tvWelcomeTitle"
+        android:layout_below="@id/ra_ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TechCenter"
+        android:textColor="#000"
+        android:fontFamily="@font/open_sans_bold"
+        android:textSize="@dimen/_16sdp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/ra_tvWelcomeSubTitle"
+        android:layout_below="@id/ra_tvWelcomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Sign Up"
+        android:textColor="#000"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textSize="@dimen/_16sdp"
+        android:layout_centerHorizontal="true"
+        />
+
+        <EditText
+            android:id="@+id/ra_firstName"
+            android:layout_below="@id/ra_tvWelcomeSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Enter First Name"
+            android:fontFamily="@font/open_sans"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/ra_lastName"
+            android:layout_below="@id/ra_firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Enter Last Name"
+            android:fontFamily="@font/open_sans"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/ra_phone"
+            android:layout_below="@id/ra_lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Enter Phone Number"
+            android:fontFamily="@font/open_sans"
+            android:inputType="text"/>
+
+
+        <EditText
+            android:id="@+id/ra_address"
+            android:layout_below="@id/ra_phone"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Address"
+            android:fontFamily="@font/open_sans"
+            android:inputType="text"/>
+
+
+        <EditText
+            android:id="@+id/ra_email"
+            android:layout_below="@id/ra_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Enter Email"
+            android:fontFamily="@font/open_sans"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/ra_password"
+            android:layout_below="@id/ra_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Enter Password"
+            android:fontFamily="@font/open_sans"
+            android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/ra_btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/ra_password"
+        android:background="@drawable/bg_btn"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="@dimen/_13sdp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginBottom="@dimen/_28sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ra_btnRegister">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_light"
+            android:text="Already have an account?"
+            android:textColor="#363636"
+            android:textSize="@dimen/_11sdp"/>
+
+        <TextView
+            android:id="@+id/ra_tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Login"
+            android:textColor="#3d5afe"
+            android:textSize="@dimen/_11sdp" />
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

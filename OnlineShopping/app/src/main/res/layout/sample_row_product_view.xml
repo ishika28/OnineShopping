@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/product_card"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_margin="@dimen/_7sdp"
+        app:cardCornerRadius="@dimen/_8sdp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:padding="@dimen/_5sdp"
+            android:elevation="@dimen/_10sdp"
+            >
+
+            <ImageView
+                android:id="@+id/sample_productImage"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                />
+
+            <TextView
+                android:id="@+id/sample_productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sample_productImage"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/open_sans"
+                android:text="One Plus 6"
+                android:textSize="@dimen/_12sdp"
+                android:textAlignment="center"
+                android:textColor="#000000" />
+
+
+
+
+            <TextView
+                android:id="@+id/sample_productPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sample_productName"
+                android:drawableLeft="@drawable/ic_dollar"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/open_sans"
+                android:text="500"
+                android:textSize="@dimen/_12sdp"
+                android:textAlignment="center"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/sample_productRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sample_productPrice"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/ic_star"
+                android:drawablePadding="@dimen/_5sdp"
+                android:fontFamily="@font/open_sans"
+                android:text="0.0"
+                android:textColor="#000000"
+                android:textSize="@dimen/_13sdp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/cardview_light_background"></solid>
+    <corners android:radius="@dimen/_32sdp"></corners>
+    <stroke android:width="@dimen/_1sdp" android:color="#000"/>
+    <padding android:top="@dimen/_12sdp" android:left="@dimen/_12sdp"
+        android:bottom="@dimen/_12sdp" android:right="@dimen/_12sdp"></padding>
+</shape>

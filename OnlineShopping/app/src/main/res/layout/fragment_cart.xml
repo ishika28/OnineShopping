@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".Fragment.CartFragment"
+    android:id="@+id/scrollViewCart">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_25sdp"
+        android:text="Your Cart"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:fontFamily="@font/open_sans_bold"
+        android:id="@+id/fa_cartTitle"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/recyclerViewCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#FFF"
+        android:layout_below="@+id/fa_cartTitle">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:layout_below="@id/recyclerViewCart"
+        android:textSize="@dimen/_15sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Total Price: $"
+        android:textColor="#000000"
+        android:id="@+id/total_title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_below="@id/recyclerViewCart"
+        android:layout_toRightOf="@id/total_title"
+        android:fontFamily="@font/open_sans"
+        android:text="1000"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="#000000"
+        android:id="@+id/fa_tv_total"
+        />
+    <Button
+
+        android:id="@+id/cart_btn_checkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn"
+        android:textColor="#FFFFFF"
+        android:text="Checkout"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/open_sans"
+        android:layout_below="@+id/fa_tv_total"
+        />
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_container"
+            >
+
+        </FrameLayout>
+    </ScrollView>
+    <com.tbuonomo.morphbottomnavigation.MorphBottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/main_menu"
+        android:backgroundTint="#3d5afe"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#ffffff"
+        app:morphCornerRadius="@dimen/_120sdp"
+        app:morphItemRadius="@dimen/_45sdp"
+        app:morphVerticalOffset="@dimen/_7sdp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

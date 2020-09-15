@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">OnlineShopping</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="uploadImage">
+        <item>Pick from gallery</item>
+        <item>Use Camera</item>
+    </string-array>
+
+    <string-array name="itemId">
+        <item>gallery_image</item>
+        <item>camera_image</item>
+    </string-array>
+</resources>

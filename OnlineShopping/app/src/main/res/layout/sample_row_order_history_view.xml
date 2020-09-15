@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_8sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/sample_order_history_img"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_margin="@dimen/_10sdp"
+                />
+
+            <TextView
+                android:id="@+id/sample_order_history_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/sample_order_history_img"
+                android:fontFamily="@font/open_sans"
+                android:text="Razer DeathAdder"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/sample_order_history_currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sample_order_history_name"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/sample_order_history_img"
+                android:fontFamily="@font/open_sans"
+                android:text="Total: $ "
+                android:textSize="@dimen/_13sdp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/sample_order_history_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sample_order_history_name"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/sample_order_history_currency"
+                android:fontFamily="@font/open_sans"
+                android:text="100"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/sample_order_history_qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sample_order_history_price"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/sample_order_history_img"
+                android:fontFamily="@font/open_sans"
+                android:text="1"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/sample_order_history_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sample_order_history_qty"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/sample_order_history_img"
+                android:fontFamily="@font/open_sans"
+                android:text="01/01/2019"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/sample_order_history_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sample_order_history_date"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/sample_order_history_img"
+                android:fontFamily="@font/open_sans"
+                android:text="Type"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="#000000" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

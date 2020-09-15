@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_8sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/sample_wishlist_img"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_115sdp"
+            android:layout_margin="@dimen/_10sdp"
+            />
+
+        <TextView
+            android:id="@+id/sample_wishlist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/sample_wishlist_img"
+            android:fontFamily="@font/open_sans"
+            android:text="Razer DeathAdder"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="#000000" />
+
+
+
+
+        <TextView
+            android:id="@+id/sample_wishlist_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sample_wishlist_name"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/sample_wishlist_img"
+            android:drawableLeft="@drawable/ic_dollar"
+            android:fontFamily="@font/open_sans"
+            android:text="100"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="#000000" />
+
+
+        <TextView
+            android:id="@+id/sample_wishlist_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sample_wishlist_price"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/sample_wishlist_img"
+            android:fontFamily="@font/open_sans"
+            android:text="Razer"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/sample_wishlist_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sample_wishlist_category"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/sample_wishlist_img"
+            android:fontFamily="@font/open_sans"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableLeft="@drawable/ic_star"
+            android:text="5"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/sample_wishlist_date_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sample_wishlist_rating"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/sample_wishlist_img"
+            android:fontFamily="@font/open_sans"
+            android:text="Date Added: "
+            android:textSize="@dimen/_13sdp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/sample_wishlist_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sample_wishlist_rating"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/sample_wishlist_date_title"
+            android:fontFamily="@font/open_sans"
+            android:text="01/01/2019"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/sample_wishlist_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_below="@+id/sample_wishlist_date"
+            android:layout_toRightOf="@+id/sample_wishlist_date_title"
+            android:background="@drawable/bg_btn"
+            android:fontFamily="@font/open_sans"
+            android:text="Remove"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_product"
+        android:enabled="true"
+        android:icon="@drawable/ic_devices_white"
+        android:title="Products"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_wishlist"
+        android:enabled="true"
+        android:icon="@drawable/ic_favourite_white"
+        android:title="Wishlist"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_cart"
+        android:enabled="true"
+        android:icon="@drawable/ic_shopping_cart_white"
+        android:title="Cart"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_account_circle_white"
+        android:title="Profile"
+        app:showAsAction="ifRoom"/>
+
+</menu>

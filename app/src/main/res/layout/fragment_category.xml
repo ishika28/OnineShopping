@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".Fragment.CategoryFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_25sdp"
+        android:text="Browse By Category"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:fontFamily="@font/open_sans"
+        android:id="@+id/categoryTitle"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_input_layout"
+        android:hint="Search"
+        android:fontFamily="@font/open_sans"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:drawableLeft="@drawable/ic_search_black"
+        android:drawablePadding="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/categoryTitle"
+        android:id="@+id/categorySearch">
+    </EditText>
+
+    <androidx.recyclerview.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/recyclerViewCategory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_4sdp"
+        android:background="#FFF"
+        android:layout_below="@+id/categorySearch">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

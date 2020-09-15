@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    tools:context=".Fragment.ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:background="@drawable/profilebg"
+            android:id="@+id/img_layout">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_70sdp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/pf_userimg"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:textSize="@dimen/_18sdp"
+            android:text="Profile"
+            android:textColor="#000"
+            android:fontFamily="@font/open_sans_semibold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/img_layout"
+            android:id="@+id/profile_title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_16sdp"
+            android:text="Name Here"
+            android:textColor="#000"
+            android:fontFamily="@font/open_sans_semibold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/profile_title"
+            android:id="@+id/profile_name"/>
+
+        <Button
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            android:text="Edit Profile"
+            android:fontFamily="@font/open_sans"
+            android:textColor="#FFF"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_btn"
+            android:layout_below="@id/profile_name"
+            android:id="@+id/btn_editProfile"/>
+
+        <Button
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            android:text="Purchase History"
+            android:fontFamily="@font/open_sans"
+            android:textColor="#FFF"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_btn"
+            android:layout_below="@id/btn_editProfile"
+            android:id="@+id/btn_viewHistory"/>
+
+        <Button
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            android:text="Send Feedback"
+            android:fontFamily="@font/open_sans"
+            android:textColor="#FFF"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_btn"
+            android:id="@+id/btn_feedback"
+            android:layout_below="@id/btn_viewHistory"/>
+
+        <Button
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            android:text="About Us"
+            android:fontFamily="@font/open_sans"
+            android:textColor="#FFF"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_btn"
+            android:id="@+id/btn_aboutUs"
+            android:layout_below="@id/btn_feedback"/>
+
+        <Button
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            android:text="Logout"
+            android:fontFamily="@font/open_sans"
+            android:textColor="#FFF"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_btn"
+            android:id="@+id/btn_logout"
+            android:layout_below="@id/btn_aboutUs"/>
+
+    </RelativeLayout>
+</ScrollView>

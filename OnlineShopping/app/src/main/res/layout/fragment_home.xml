@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.HomeFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.smarteist.autoimageslider.SliderView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+            app:sliderCircularHandlerEnabled="true"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="@dimen/_3sdp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="@dimen/_2sdp"
+            app:sliderIndicatorRadius="@dimen/_1sdp"
+            app:sliderIndicatorSelectedColor="#5A5A5A"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="1"
+            app:sliderStartAutoCycle="true"
+            android:id="@+id/imageSlider"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Welcome to OnlineShopping!"
+            android:textColor="#000"
+            android:gravity="center"
+            android:fontFamily="@font/open_sans_bold"
+            android:textSize="@dimen/_16sdp"
+            android:layout_below="@+id/imageSlider"
+            android:id="@+id/homeText1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Get the best products with great pricing!"
+            android:textColor="#000"
+            android:gravity="center"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textSize="@dimen/_14sdp"
+            android:layout_below="@+id/homeText1"
+            android:id="@+id/homeText2"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="View Our Categories"
+            android:textColor="#000"
+            android:gravity="center"
+            android:fontFamily="@font/open_sans_bold"
+            android:textSize="@dimen/_13sdp"
+            android:layout_below="@+id/homeText2"
+            android:id="@+id/categories_title"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/categories_title"
+            android:scrollbars="horizontal"
+            android:fadeScrollbars="false"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="Checkout Our Stores"
+            android:textColor="#000"
+            android:gravity="center"
+            android:fontFamily="@font/open_sans_bold"
+            android:textSize="@dimen/_13sdp"
+            android:id="@+id/shops_title"
+            android:layout_below="@+id/recyclerViewCategories"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewShops"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shops_title"
+            android:scrollbars="horizontal"
+            android:fadeScrollbars="false"
+            />
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

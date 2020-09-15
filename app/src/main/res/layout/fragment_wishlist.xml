@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".Fragment.WishlistFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_25sdp"
+        android:text="Your Wishlist"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:fontFamily="@font/open_sans_bold"
+        android:id="@+id/wf_title"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/recyclerViewWishlist"
+        android:layout_below="@id/wf_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#FFF">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
